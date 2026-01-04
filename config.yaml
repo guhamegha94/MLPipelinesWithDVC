@@ -1,0 +1,20 @@
+# config.yaml
+data_source:
+  data_url: "C:\Users\MeghaGuha\Dropbox\PC\Desktop\Megha\MBA practice\mlops\MLPipelinesWithDVC\MLPipelinesWithDVC\twitter_sentiment.csv"
+  file_type: "csv"
+  delimiter: ","
+
+data_split:
+  test_size: 0.2
+  random_state: 42
+  shuffle: true
+
+artifacts:
+  artifacts_dir: "./outputs/"
+  model_dir: "./models/"
+  logs_dir: "./logs/"
+
+model:
+  n_estimators: 100
+  max_depth: 10
+  learning_rate: 0.01
